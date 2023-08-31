@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculoDoIMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <header id="cabeça">
+        <h1><p>Praticando...</p></h1>
+        <h3><p>IMC</p></h3>
+   </header> 
+   <section id="corpo">
+       <article id="entrada">
+            <p>
+                <label>Altura: </label>
+                <input class="input" type="number" id="altura">
+            </p>
+            <p>
+                <label>Massa: </label>
+                <input class="input" type="number" id="massa">
+            </p>
+            <p>
+                <input type="button" value="calcular" onclick="calcular()">
+            </p>
+       </article>
+       <article id="saida">
+            <p><i>Esperando...</i></p>
+            <p><img></p>
+       </article>
+   </section>
+    <script src="script.js"></script>
+</body>
+</html>
