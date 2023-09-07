@@ -1,10 +1,14 @@
 body{
     text-align: center;
     background-color: cornflowerblue;
+    font-size: 180%;
+    background: url('imagens/exercicio.png');
 }
 
 #cabeça{
-    width: 500px;
+    background: url(imagens/coracao.png) no-repeat;
+    background-size: 100% 100%;
+    width: 40%;
     height: 300px;
     border-radius: 50px;
     border: 1px solid blueviolet;
@@ -14,19 +18,20 @@ body{
     box-shadow: 3px 3px 3px rgb(43, 55, 223);
     background-color: cyan;
 }
-#cabeça h1{
-    color:rgba(216, 17, 17, 0.63);    
+#cabeça h1{   
     text-shadow: 3px 3px 3px gold;
-    font: 70px bold italic arial;
+    font: 200% bold italic arial;
 }
 #cabeça h3{
     color: rgba(9, 9, 175, 0.788);
     text-shadow: 3px 3px 3px green;
-    font: 50px arial italic bold;
+    font: 200% arial italic bold;
     text-decoration: underline;
 }
 #corpo{
-    width: 700px;
+    background: url(imagens/peso.png) no-repeat;
+    background-size: 100% 100%;
+    width: 55%;
     height: 400px;
     border-radius: 70px;
     border: 1px solid rgba(30, 30, 145, 0.911);
@@ -51,16 +56,49 @@ input{
 #entrada{
     margin: auto;
     padding: 50px;
+    position: relative;
+    bottom: 80px;
 }
 #saida{
     margin: auto;
     padding: 10px;
     font: 40px arial;
+    position: relative;
+    bottom: 150px;
 }
 img{
     width: 400px;
     height: 200px;
     position: relative;
     border-radius: 50%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+
+@media only screen and (max-width:800px){
+    #corpo{
+        width: 70%;
+    }
+    body{
+        width: 99%;
+    }
+}
+
+@media only screen and (max-width:671px){
+    #cabeça h3{
+        font-size: 150%;
+    }
+
+    #corpo{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:507px){
+    #cabeça h3{
+        font-size: 100%;
+    }
+
+    #corpo{
+        width: 100%;
+    }
 }
