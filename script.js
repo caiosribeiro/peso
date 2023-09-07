@@ -1,27 +1,28 @@
 function calcular(){
-    var altura = document.getElementById('altura')
-    var massa = document.getElementById('massa')
-    var saida = document.getElementById('saida')
-    
+    let altura = document.getElementById('altura')
+    let massa = document.getElementById('massa')
+    let saida = document.getElementById('saida')
+    console.log(altura)
+    console.log(massa)
         if(altura.value.length == 0 || massa.value.length == 0){
         alert('Campos vazios!')
         alert('Preencha os campos e tente novamente!')
     } else{
-        var a = Number(altura.value)
-        var m = Number(massa.value)
-        var r = m / (a**2)
-        var img = document.createElement('img')
+        let a = Number(altura.value)
+        let m = Number(massa.value)
+        let r = m / (a**2)
+        let img = document.createElement('img')
         img.setAttribute('src', 'id')
-
+        console.log(r)
         if(r < 17){
             saida.innerHTML = `Seu IMC deu ${r.toFixed(2)}, seu peso está muito abaixo do peso ideal.</break>`
             img.setAttribute('src', 'imagens/magra-demais.png')
             
-        } else if(r >= 17 && r < 18,5 ){
+        } else if(r >= 17 && r < 18.5 ){
             saida.innerHTML = `Seu IMC deu ${r.toFixed(2)}, seu peso está abaixo do peso ideal.</break>`
             img.setAttribute('src' , 'imagens/magra.png')
             
-        } else if(r >= 18,5 && r < 25){
+        } else if(r >= 18.5 && r < 25){
             saida.innerHTML = `Seu IMC deu ${r.toFixed(2)}, seu peso está no peso ideal, parabéns!</break>`
             img.setAttribute('src', 'imagens/peso-médio.png')
             
