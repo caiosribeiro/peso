@@ -60,13 +60,13 @@ input{
     background-color: gray;   
 }
 #entrada{
-    margin: auto;
+    margin-top: 10%;
     padding: 50px;
     position: relative;
     bottom: 80px;
 }
 #saida{
-    margin: auto;
+    margin-top: 10%;
     padding: 10px;
     font: 40px arial;
     position: relative;
